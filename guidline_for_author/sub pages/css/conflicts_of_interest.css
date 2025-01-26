@@ -1,0 +1,464 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 70px;
+    padding-left: 150px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding-right: 150px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    color: #8BC34A;
+}
+
+.call-for-paper {
+    background-color: #81b940;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Main contai/* Container Styling */
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1300px;
+    margin: auto;
+    background-color: #fff;
+    gap: 0px;
+    padding-top: 0px;
+    padding-left: 140px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    flex: 0 0 255px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #dbd4d4;
+    margin-top: 15px;
+    border-radius: 25px;
+    height: 583px;
+    overflow-y: auto;
+}
+
+/* Sidebar Navigation Styling */
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px;
+}
+
+/* Ensure long list items align properly */
+.sidebar-nav a {
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    white-space: normal; /* Allow text to wrap */
+    line-height: 1.5; /* Adjust line height for readability */
+    padding-left: 15px; /* Add padding for proper alignment of wrapped text */
+    text-indent: 0px; /* Remove negative indent for proper alignment */
+    position: relative; /* Ensure the text aligns with the arrow */
+}
+
+/* Ensure text starts from the same position for multi-line items */
+.sidebar-nav a::before {
+    content: ">";
+    padding-right: 5px;
+    color: #333; /* Optional: Color for the arrow */
+    position: absolute; /* Position the arrow separately */
+    margin-left: -20px; /* Adjust the position of the arrow */
+
+    
+}
+
+
+.sidebar-nav a:hover {
+    color: #94C045;
+}
+
+/* Adjust specific link for alignment */
+.sidebar-nav a.active {
+    font-weight: bold; /* Remove bold styling */
+    color: #94C045;
+    text-indent: 0px; /* Remove the negative indent for this link to match the first word's position */
+}
+.content {
+    padding-top: 5px;
+    padding-left: 25px;
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    width: 900px;
+}
+.content-heading {
+    font-size: 18px;
+    color: #94C045;
+    margin-top: 10px;
+
+    
+}
+
+.paraghraphs-info {
+    text-align: justify;
+    font-size: 14px;
+    margin: 0 0 0px;
+    color: #000;
+    text-align: justify;
+    line-height: 1.7em;
+    letter-spacing: 0.5px;
+    text-indent: 50px;
+    
+}
+
+.guidelines-list {
+    list-style-type: none;
+    padding-left: 20px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.guidelines-list li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.guidelines-list li::before {
+    content: "\f061"; /* Font Awesome code for right arrow */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 850;
+    color: #8BC34A; /* Green color */
+    position: absolute;
+    left: -20px;
+}
+  
+  
+.guidelines-list {
+    list-style-type: none;
+    padding-left: 20px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.guidelines-list li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.guidelines-list li::before {
+    content: "\f061"; /* Font Awesome code for right arrow */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #8BC34A; /* Green color */
+    position: absolute;
+    left: -20px;
+}
+  
+/* for box content */
+  .accordion {
+    margin-top: 20px;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    border: none;
+    background: #f4f4f4;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    display: none;
+    background: #fff;
+    color: #333;
+    border-top: 1px solid #ddd;
+  }
+  
+  .accordion-content p {
+    margin: 0;
+  }
+
+  .guidelines-list {
+    list-style-type: none;
+    padding-left: 20px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.guidelines-list li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.guidelines-list li::before {
+    content: "→";
+    color: #8BC34A;
+    position: absolute;
+    left: -20px;
+}
+
+.title-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #404040;
+    /* Dark gray background */
+    color: #fff;
+    /* White text */
+    padding: 10px 0;
+    /* Reduce padding for the first section */
+    font-family: 'Open Sans', Arial, sans-serif;
+    /* Font family */
+    padding-left: 70px;
+
+}
+
+.footer-container {
+    display: flex;
+    /* Flex layout */
+    justify-content: space-between;
+    /* Space between columns */
+    flex-wrap: wrap;
+    /* Allow wrapping for responsiveness */
+    max-width: 1000px;
+    /* Limit footer width */
+    margin: 0 auto;
+    /* Center the footer */
+    padding: 0 40px;
+    /* Horizontal padding */
+}
+
+.footer-section {
+    flex: 1;
+    /* Equal flex basis for each section */
+    min-width: 165px;
+    /* Minimum width */
+    margin-bottom: 15px;
+    /* Bottom margin for spacing */
+    margin-right: 1.5px;
+
+}
+
+.footer-section h4 {
+    font-size: 14px;
+    /* Header font size */
+    margin-bottom: 10px;
+    /* Spacing below header */
+    color: #ffffff;
+    /* White color */
+    padding-left: 00px;
+    /* Left padding for alignment */
+}
+
+.footer-section ul {
+    list-style: none;
+    /* Remove default bullet points */
+    padding-left: 0;
+    /* Remove default padding */
+    margin-bottom: 0;
+    /* Remove bottom margin for better spacing */
+}
+
+.footer-section ul li {
+    margin-bottom: 6px;
+    /* Space between list items */
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    /* Light gray links */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 13px;
+    /* Match the font size */
+    padding-left: 20px;
+    /* Adjust spacing for alignment */
+    position: relative;
+    /* Position for arrows */
+}
+
+.footer-section ul li a:hover {
+    color: #8bc34a;
+    /* Green hover color */
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
+/* Arrow for list items */
+.footer-section ul li a::before {
+    content: "›";
+    /* Arrow symbol */
+    color: #ccc;
+    /* Light gray for arrows */
+    position: absolute;
+    /* Position relative to link */
+    left: 0;
+    /* Align arrow to the left */
+    font-size: 14px;
+    /* Match arrow size */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background-color: #333;
+    /* Dark background */
+    color: #fff;
+    /* White text */
+    padding: 15px 0;
+    /* Vertical spacing */
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Center content */
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    /* Space between sections */
+    align-items: center;
+    /* Align items vertically */
+    padding: 0 20px;
+    /* Horizontal padding */
+    flex-wrap: wrap;
+    /* Wrap content for smaller screens */
+}
+
+.footer-bottom-left {
+    margin-top: 0px;
+    margin-right: 00px;
+    padding-left: 100px;
+
+
+}
+
+.footer-bottom-right {
+    flex: 1;
+    /* Equal spacing for sections */
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.footer-bottom-center {
+    text-align: center;
+    position: relative;
+    /* Make the container position: relative */
+    margin-top: 0px;
+    padding-left: 50px;
+}
+
+.footer-bottom-center img {
+    max-width: 100px;
+    /* Adjust logo size */
+    display: block;
+    margin: 0px 0px;
+    /* Center the image */
+    position: sticky;
+    /* Make the image position: absolute */
+    bottom: 0;
+    /* Align the bottom of the image with the bottom of the container */
+    margin-left: 0px;
+    margin-top: 00px;
+    /* padding-left: 0px; */
+}
+
+.footer-bottom-right .designer {
+    color: #8bc34a;
+    /* Green for designer credit */
+    font-weight: bold;
+
+}
+
+
+/* Responsive layout adjustments for smaller screens */
+@media (max-width: 768px) {
+
+
+
+
+    .footer-container {
+        flex-direction: column;
+        /* Stack columns vertically */
+        text-align: center;
+        /* Center align text for smaller screens */
+    }
+
+    .footer-section {
+        margin-bottom: 10px;
+        /* Reduce spacing for smaller screens */
+    }
+
+    .footer-bottom-container {
+        flex-direction: column;
+        /* Stack sections vertically */
+        text-align: center;
+        /* Center-align text */
+    }
+
+    .footer-bottom-left,
+    .footer-bottom-center,
+    .footer-bottom-right {
+        margin-bottom: 10px;
+        /* Add spacing between stacked sections */
+    }
+}
